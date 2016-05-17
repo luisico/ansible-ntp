@@ -1,0 +1,11 @@
+---
+- name: Install package
+  yum: name=ntp state=present
+
+- name: Configure ntp
+  template: dest=/etc/ntp.conf src=ntp.conf.j2 mode=0644
+  notify:
+    - Restart ntpd
+
+- name: Make sure service is up on boot
+  service: name=ntpd enabled=yes state=started
