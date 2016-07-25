@@ -3,7 +3,7 @@
   yum: name=ntp state=present
 
 - name: Configure ntp
-  template: dest=/etc/ntp.conf src=ntp.conf.j2 mode=0644
+  template: dest=/etc/ntp.conf src=ntp.conf.j2 mode=0644 owner=root group=root
   notify:
     - Restart ntpd
 
