@@ -2,8 +2,6 @@ NTP
 ===
 Install and configure NTP.
 
-List your ntp servers in `ntp_servers`.
-
 Requirements
 ------------
 See `meta/main.yml`.
@@ -22,7 +20,7 @@ Example:
 ```
 - hosts: servers
   roles:
-  - ntp
+    - ntp
 ```
 
 TODO
@@ -35,4 +33,7 @@ Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 Author Information
 ------------------
-Luis Gracia <luis.gracia@ebi.ac.uk>
+Luis Gracia while at [EMBL-EBI](http://www.ebi.ac.uk/):
+- luis.gracia [at] ebi.ac.uk
+- GitHub at [luisico](https://github.com/luisico)
+- Galaxy at [luisico](https://galaxy.ansible.com/luisico)
