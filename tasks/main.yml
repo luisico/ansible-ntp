@@ -7,5 +7,8 @@
   notify:
     - Restart ntpd
 
+- name: Ensure chronyd is disabled
+  service: name=chronyd enabled=no state=stopped
+
 - name: Make sure service is up on boot
   service: name=ntpd enabled=yes state=started

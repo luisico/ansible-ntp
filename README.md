@@ -2,6 +2,8 @@ NTP
 ===
 Install and configure NTP.
 
+Chronyd will be disabled if present.
+
 Requirements
 ------------
 See `meta/main.yml`.
